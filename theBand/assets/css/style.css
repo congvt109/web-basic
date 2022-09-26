@@ -1,0 +1,86 @@
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* todo: 
+1. vi tri
+2. khich thuoc
+3. mau sac
+4. kieu dang
+ */
+/* 
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+/* 
+#nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+} */
+
+#header {
+    background-color: #000;
+    line-height: 46.5px;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46.5px;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+}
