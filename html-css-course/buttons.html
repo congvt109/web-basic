@@ -11,6 +11,8 @@
     cursor: pointer;
     margin-right: 5px;
     /*margin: lề, căn lề*/
+    transition: opacity 1s;
+    /*độ smooth khi animation xảy ra*/
   }
 
   .subscribe-button:hover,
@@ -30,6 +32,7 @@
     border-radius: 2px;
     margin-right: 5px;
     cursor: pointer;
+    transition: 0.3s;
   }
 
   .join-button:hover {
@@ -50,6 +53,7 @@
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    transition: box-shadow 0.15s;
   }
 
   .tweet-button:active {
@@ -57,10 +61,44 @@
   }
 
   .tweet-button:hover {
-    box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
+    /* box-shadow: 0px 4px 8px rgb(0 0 0 / 20%); */
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    /*
+    0px horizontal chiều ngang
+    4px vertical chiều dọc
+    0 blur độ toả
+    a trong rbga là opacity độ mờ của màu, nhìn xuyên qua
+    */
+  }
+
+  .download-button {
+    color: rgb(91, 91, 91);
+    /* font-family: "Maple Mono"; */
+    font-weight: 500;
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 5px;
+    height: 36px;
+    width: 100px;
+    transition: box-shadow 0.15s, opacity 0.15s;
+    margin: 0 5px 0 5px;
+    /*top right bot left*/
+    /* margin: 0 5px; */
+    /*có thể viết thế này*/
+  }
+
+  .download-button:hover {
+    background-color: rgb(91, 91, 91);
+    color: white;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .download-button:active {
+    opacity: 0.7;
   }
 </style>
 
 <button class="subscribe-button">SUBSCRIBE</button>
 <button class="join-button">JOIN</button>
 <button class="tweet-button">Tweet</button>
+<!-- exercises -->
+<button class="download-button">Download</button>
