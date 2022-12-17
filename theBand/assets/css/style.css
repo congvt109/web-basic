@@ -14,7 +14,7 @@ html {
 
 #header {
   height: 46.5px;
-  background-color: rgba(43, 55, 61, 1);
+  background-color: #000;
 }
 
 #nav, .subnav {
@@ -48,22 +48,22 @@ html {
 
 #nav > li:hover > a,  
 #nav .subnav li:hover a {
-  background-color: rgba(68, 87, 96, 1);
+  background-color: #ccc;
   /* background-color: #fff; */
-  color: #fff;
+  color: #000;
 }
 
 #nav .subnav {
   display: none;
   position: absolute;
-  background-color: rgba(43, 55, 61, 1);
+  background-color: #fff;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 0 10px rgba(43, 55, 61, 1);
+  /* box-shadow: 0 0 10px rgba(43, 55, 61, 1); */
   /* background-color: #fff; */
 }
 
 #nav .subnav a {
-  color: #fff;
+  color: #000;
   padding: 0 16px;
   line-height: 38px;
 }
