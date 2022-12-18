@@ -1,4 +1,8 @@
 <style>
+  html {
+    margin-top: 50px;
+  }
+
   p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -32,11 +36,13 @@
   .buy-or-not {
     background-color: rgb(0, 113, 227);
     color: white;
-    padding: 7px 15px;
-    border-radius: 15px;
+    padding: 7px 20px;
+    border-radius: 16px;
     cursor: pointer;
     transition: opacity 0.3s;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .buy-or-not:hover {
@@ -47,15 +53,82 @@
     opacity: 0.7;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
   }
+
+  .usd,
+  .raise,
+  .forecast,
+  .reduce {
+    text-align: left;
+    font-weight: normal;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .usd {
+    font-size: 25px;
+    font-weight: 520;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+
+  .unit {
+    font-weight: 540;
+    font-size: 16px;
+    color: rgba(57, 57, 57, 0.828);
+  }
+
+  .raise {
+    color: rgb(27, 138, 27);
+    margin-bottom: 6px;
+  }
+
+  .forecast {
+    color: rgba(57, 57, 57, 0.828);
+  }
+
+  .reduce {
+    margin: 0px;
+    color: #ac2424cf;
+  }
+
+  .box1 {
+    background-color: rgba(113, 113, 113, 0.077);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: fit-content;
+    /* margin-top: 30px; */
+    margin: 30px auto;
+  }
 </style>
 
+<html>
+<!-- exercise 5e -->
 <p class="state">New</p>
 <p class="mac-name">MacBook Pro</p>
 <p class="issue">Supercharged for pros.</p>
 <p class="price">From $1999</p>
-<p><span class="buy-or-not">Buy</span></p>
+<!-- <p><span class="buy-or-not">Buy</span></p> -->
+<p class="buy-or-not">Buy</p>
+<!-- Nếu dùng span cho Buy thì sẽ không cần căn giữa
+    Nếu dùng class cho Buy thì sẽ căn 
+    width: fit-content;
+    margin left, right: auto; -->
 
+<!-- exercise 5f -->
+<div class="box1">
+  <p class="usd">
+    1,049.61
+    <span class="unit">
+      USD
+    </span>
+  </p>
+  <p class="raise">+18.05 (1.75%) today</p>
+  <p class="forecast">After hours 1,048 <span class="reduce">-1.61 (0.15%)</span>
+  </p>
+</div>
 
+</html>
 
 
 
