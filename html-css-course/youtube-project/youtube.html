@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/youtube.css">
+  <title>Simple-Youtube</title>
+  <style>
+    .thumnails {
+      /* Ảnh thật có size 700 * 400 */
+      width: 300px;
+      /* height: 300px; 
+      border: 4px solid rgba(200, 8, 8, 0.531); */
+      /* Dựa vào border để quan sát */
+      
+      /* object-fit: cover;
+      object-position: left;
+      object-position: right; */
+      /* Khi sử dụng cover, ảnh sẽ được nhìn qua frame có kích thước 300*300
+      Khi đó, object-position sẽ chỉ "đùn ảnh" sang left, right, center */
+
+      /* object-fit: contain;
+      object-position: top;
+      object-position: bottom;
+      object-position: center; */
+      /* Với contain, ảnh vẫn giữ nguyên hình dạng
+        Thu nhỏ theo tỉ lệ để chui vừa ô 300 * 300 */
+
+    }
+
+    .search-bar {
+      font-size: 20px;
+      margin-left: 12px;
+    
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/lofi-plalist.webp" alt="be-mac-worlcup" class="thumnails">
+  <br>
+  <input class="search-bar"" type="text" placeholder="Search">
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  background-image: url("./arg-flag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  position: absolute;
+  height: fit-content;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.goal {
+  font-family: Rubik ;
+  font-size: 100px;
+  margin-left: 500px;
+  color: white;
+  font-style: italic;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+}
+
+#g {
+  font-size: 30px;
+}
+
+#o {
+  font-size: 40px;
+}
+#a {
+  font-size: 50px;
+}
+#l1 {
+  font-size: 60px;
+}
+#l2 {
+  font-size: 70px;
+}
+#l3 {
+  font-size: 80px;
+}
