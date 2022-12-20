@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS display properties</title>
+  <style>
+    .dontlaugh-img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      object-position: middle;
+      display: block;
+    }
+
+    .search-bar {
+      display: block;
+
+
+      padding: 8px 12px;
+      border: 1px solid gray;
+      border-radius: 18px;
+      border: 1px solid #dfe1e5;
+
+    }
+
+    .search-bar:focus {
+      border: none;
+      outline: none;
+    }
+
+    .search-bar:hover {
+      border: none;
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    }
+
+    .video-stats,
+    .video-author {
+      display: inline-block;
+    }
+
+    .video-preview {
+      width: 300px;
+      display: inline-block;    /*vì div là block element nên sẽ chiếm toàn bộ dòng*/
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <input type="text" class="search-bar" placeholder="Search Google">
+  <div class="video-preview">
+    <img class="dontlaugh-img" src="./img/dont-laugh.webp" alt="dont-laugh">
+    <p class="video-title">Try not to Laugh (#9)</p>
+    <p class="video-author">Markiplier</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p>
+  </div>
+
+  <div class="video-preview">
+    <img class="dontlaugh-img" src="./img/dont-laugh.webp" alt="dont-laugh">
+    <p class="video-title">Try not to Laugh (#9)</p>
+    <p class="video-author">Markiplier</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p>
+  </div>
+
+</body>
+
+</html>

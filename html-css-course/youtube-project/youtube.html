@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,7 @@
       /* height: 300px; 
       border: 4px solid rgba(200, 8, 8, 0.531); */
       /* Dựa vào border để quan sát */
-      
+
       /* object-fit: cover;
       object-position: left;
       object-position: right; */
@@ -30,15 +31,59 @@
     }
 
     .search-bar {
-      font-size: 20px;
-      margin-left: 12px;
-    
+      display: block;
+      padding: 8px 12px;
+      border: 1px solid gray;
+      border-radius: 18px;
+      border: 1px solid #dfe1e5;
+
+    }
+
+    .search-bar:focus {
+      border: none;
+      outline: none;
+    }
+
+    .search-bar:hover {
+      border: none;
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    }
+
+    .video-stats,
+    .video-author {
+      display: block;
+    }
+
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+      /*vì div là block element nên sẽ chiếm toàn bộ dòng*/
+      vertical-align: top;
+      /* hiện tượng 2 ảnh lệch nhau vì 1 ảnh có chữ chia làm 2 dòng, nên cao hơn */
+      margin-right: 15px;
     }
   </style>
 </head>
+
 <body>
-  <img src="./img/lofi-plalist.webp" alt="be-mac-worlcup" class="thumnails">
-  <br>
-  <input class="search-bar"" type="text" placeholder="Search">
+  <input class="search-bar"" type=" text" placeholder="Search Google">
+
+  <div class="video-preview">
+    <img class="thumnails" src="./img/thumbnail-1.webp" alt="dont-laugh">
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+  </div>
+
+  <div class="video-preview">
+    <img class="thumnails" src="./img/thumbnail-2.webp" alt="dont-laugh">
+    <p class="video-title">Try not to Laugh (#9)</p>
+    <p class="video-author">Markiplier</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p>
+  </div>
+
+
+
 </body>
+
 </html>
