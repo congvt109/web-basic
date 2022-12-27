@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Layout in CSS</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .profile,
+    .cat-info,
+    .cat-follow {
+      display: inline-block;
+    }
+
+    .profile {
+      margin-right: 10px;
+    }
+
+    .profile-pic {
+      width: 50px;
+      border-radius: 40px;
+    }
+
+    .cat-info {
+      margin: 0;
+      width: 200px;
+    }
+
+    .cat-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .the-type {
+      font-weight: 500;
+      color: #606060;
+      margin-bottom: 6px;
+    }
+
+    .popular {
+      font-size: 14px;
+      color: #606060;
+    }
+
+    .follow-button {
+      background-color: #0096D6;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 7px 12px;
+     }
+
+     .cat-follow {
+      vertical-align: top;
+     }
+
+    
+     .check-div {
+      height: 200px;
+      border: 1px solid red;
+    }
+    
+    .check-button {
+      background-color: #0096D6;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 7px 12px;
+      vertical-align: middle;
+     }
+     .check-para {
+      vertical-align: middle;
+     }
+
+  </style>
+</head>
+<body>
+  <!-- 10a -->
+  <div class="profile">
+    <img src="./img/cat2.png" alt="profile-pic" class="profile-pic">
+  </div>
+  <div class="cat-info">
+    <p class="cat-name">oliver</p>
+    <p class="the-type">the cat</p>
+    <p class="popular">Popular</p>
+  </div>
+  <div class="cat-follow">
+    <button class="follow-button">Follow</button>
+  </div>
+
+  <div class="check-div">
+    <!-- <button class="check-button">Check</button> -->
+    <p class="check-para">Hello</p>
+  </div>
+
+
+</body>
+</html>
