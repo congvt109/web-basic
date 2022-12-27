@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+</head>
+
+<body style="padding-bottom: 1000px">
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+  ">
+    <!--     grid-template-columns: 100px 100px;
+        100px 100px is width of 2 columns of grid
+  -->
+    <div style="background-color: lightblue; 
+
+                ">
+      div1
+    </div>
+    <div style="background-color:lightpink; 
+
+                ">
+      div2
+      <p>Text</p>
+    </div>
+
+
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    /* grid-template-columns: 100px 100px 1fr; */
+    grid-template-columns: 100px 1fr;
+  ">
+    <!--     grid-template-columns: 100px 100p
+        100px 100px is width of 2 columns of grid
+        1 fr : free space -> take all of [..the rest] of space"
+  -->
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+    <div style="background-color:lightpink; ">
+      1fr
+    </div>
+    <!-- <div style="background-color: lightgreen;">
+      div3
+    </div>
+    <div style="background-color: lightcoral;">
+      div4
+    </div> -->
+
+  </div>
+
+
+  <div style="
+    margin-top: 30px;
+    display: grid;
+    /* grid-template-columns: 100px 100px 1fr; */
+    grid-template-columns: 100px 1fr 1fr;
+  ">
+    <!--     grid-template-columns: 100px 100p
+        100px 100px is width of 2 columns of grid
+        1 fr : free space -> take all of [..the rest] of space"
+        1, 2, 3 fr is ratio (tỉ lệ) width that element is taked
+  -->
+    <div style="background-color: lightblue;">
+      100px
+    </div>
+    <div style="background-color:lightpink; ">
+      1fr
+    </div>
+    <div style="background-color: lightgreen;">
+      1fr again
+    </div>
+  </div>
+
+  <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+    ">
+    <div style="background-color: lightblue;
+      height: 150px">
+      1 fr
+    </div>
+    <div style="background-color:lightpink; ">
+      1fr
+    </div>
+    <div style="background-color: lightblue;">
+      1fr again
+    </div>
+    <div style="background-color:lightpink; 
+    height: 150px">
+      1fr
+    </div>
+    <div style="background-color: lightblue;">
+      1fr again
+    </div>
+    <div style="background-color:lightpink; ">
+      1fr
+    </div>
+  </div>
+</body>
+
+</html>

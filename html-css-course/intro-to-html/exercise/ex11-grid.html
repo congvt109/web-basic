@@ -1,0 +1,157 @@
+<!-- 11d -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid exercide 9</title>
+  <style>
+    /* 9b white box */
+    .white-box {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border: 1px solid gray;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .confirm-button {
+      background-color: rgb(199, 199, 199);
+      border: 1px solid gray;
+      border-radius: 2px;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+
+    .confirm-button:active {
+      box-shadow: 5px 5px 5px rgba(66, 66, 66, 0.433);
+    }
+
+    /* white box */
+
+
+
+    /* 9d Install Youtube music */
+    .black-box {
+      background-color: #232121;
+      font-family: Arial, Helvetica, sans-serif;
+
+      width: 400px;
+      /* padding: 4px; */
+      padding-left: 15px;
+      padding-right: 15px;
+      padding: 20px 15px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .install-title {
+      margin: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.433)
+    }
+
+    /* Install Youtube music */
+
+
+    /* 9f Single profile */
+    .single-profile {
+      width: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
+    }
+
+    .avt-profile {
+      width: 200px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .cat-name,
+    .mutual-friends,
+    .add-fr-btn {
+      margin: 0;
+      margin-left: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .cat-name {
+      margin-top: 7px;
+      margin-bottom: 5px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .mutual-friends {
+      font-size: 14px;
+      color: #898F9C;
+      font-weight: 540;
+      margin-bottom: 5px;
+    }
+
+    .add-fr-btn {
+      background-color: #5380db;
+      color: white;
+      font-size: 14px;
+      padding: 9px 21px;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* 9f Single profile */
+
+
+    /* 9g List of profile */
+    .grid {
+      display: grid;
+      grid-template-columns: 230px 230px 230px;
+    }
+
+    .single-profile {}
+
+    /* 9g List of profile */
+  </style>
+</head>
+
+<body>
+
+  <div class="grid">
+    <div class="single-profile">
+      <img class="avt-profile" src="./img/cat2.png" alt="cool-cat">
+      <p class="cat-name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="add-fr-btn">Add friend</button>
+    </div>
+    <div class="single-profile">
+      <img class="avt-profile" src="./img/cat2.png" alt="cool-cat">
+      <p class="cat-name">Groud</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="add-fr-btn">Add friend</button>
+    </div>
+    <div class="single-profile">
+      <img class="avt-profile" src="./img/cat2.png" alt="cool-cat">
+      <p class="cat-name">Mbappe</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="add-fr-btn">Add friend</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
