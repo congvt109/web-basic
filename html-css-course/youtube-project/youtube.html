@@ -8,134 +8,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/youtube.css">
   <title>Simple-Youtube</title>
-  <style>
-    p {
-      font-family: Roboto, Arial;
-      margin: 0;
-    }
-
-    .thumnails {
-      /* Ảnh thật có size 700 * 400 */
-      width: 300px;
-      /* height: 300px; 
-      border: 4px solid rgba(200, 8, 8, 0.531); */
-      /* Dựa vào border để quan sát */
-
-      /* object-fit: cover;
-      object-position: left;
-      object-position: right; */
-      /* Khi sử dụng cover, ảnh sẽ được nhìn qua frame có kích thước 300*300
-      Khi đó, object-position sẽ chỉ "đùn ảnh" sang left, right, center */
-
-      /* object-fit: contain;
-      object-position: top;
-      object-position: bottom;
-      object-position: center; */
-      /* Với contain, ảnh vẫn giữ nguyên hình dạng
-        Thu nhỏ theo tỉ lệ để chui vừa ô 300 * 300 */
-
-    }
-
-    .search-bar {
-      display: block;
-      padding: 8px 12px;
-      border: 1px solid gray;
-      border-radius: 18px;
-      border: 1px solid #dfe1e5;
-
-    }
-
-    .search-bar:focus {
-      border: none;
-      outline: none;
-    }
-
-    .search-bar:hover {
-      border: none;
-      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 16px;
-      row-gap: 40px;
-    }
-
-
-    /* .video-preview { */
-    /* width: 300px;
-      display: inline-block; */
-    /*vì div là block element nên sẽ chiếm toàn bộ dòng*/
-    /* vertical-align: top; */
-    /* hiện tượng 2 ảnh lệch nhau vì 1 ảnh có chữ chia làm 2 dòng, nên cao hơn */
-    /* margin-right: 15px; */
-    /* } */
-
-
-
-    .thumnails {
-      width: 100%;
-    }
-
-
-
-    .video-stats,
-    .video-author {
-      display: block;
-    }
-
-    .thumnail-row {
-      margin-bottom: 10px;
-    }
-
-    .video-info-grid {
-      display: grid;
-      grid-template-columns: 50px 1fr;
-    }
-
-    .channel-picture {
-      vertical-align: top;
-      /* background-color: gray; */
-    }
-
-    .profile-picture {
-      /* width: 50px; */
-      width: 36px;
-      /* chỉnh width ảnh = width của div channel-pic */
-      border-radius: 50px;
-    }
-
-
-    .video-title {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      /* space between lines in this <p> */
-    }
-
-    .video-stats,
-    .video-author {
-      font-size: 12px;
-      color: #606060;
-      margin: 0;
-    }
-
-    .video-author {
-      margin-top: 8px;
-    }
-
-    .video-stats {
-      margin-bottom: 16px;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/video.css">
 </head>
 
 <body>
-  <input class="search-bar"" type=" text" placeholder="Search Google">
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="./icons/hamburger-menu.svg" alt="hamburger-menu">
+      <img class="youtube-logo" src="./icons/youtube-logo.svg" alt="youtube-logo">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar"" type=" text" placeholder="Search">
+      <img class="search-icon" src="./icons/search.svg" alt="search-icon">
+      <img class="voice-search-icon" src="./icons/voice-search-icon.svg" alt="voice-search-icon">
+    </div>
+    <div class="right-section">
+      right section
+    </div>
+  </div>
+
+
   <div class="video-grid">
 
     <div class="video-preview">

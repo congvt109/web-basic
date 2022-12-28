@@ -1,0 +1,52 @@
+.header {
+  background-color: #717073;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  color: white;
+  font-size: 15px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.left-section p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.middle-section {
+  flex: 1;
+  max-width: 400px;
+  /* background-color: lightblue;  */ /*bg for checking size*/
+}
+
+.middle-section input {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 0 10px 18px;
+  font-weight: 550;
+  color: #7170739d;
+  width: 500px;
+}
+
+.right-section {
+  width: 105px;
+  margin-left: 20px;
+}
+
+.download-button {
+  font-size: 16px;
+  background-color: #717073;
+  padding: 7px 12px 7px 12px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4px;
+}

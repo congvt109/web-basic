@@ -1,0 +1,83 @@
+.search-bar {
+  /* padding: 8px 12px; */
+  /* border-radius: 18px; */
+  border: 1px solid #dfe1e5;
+}
+
+/* .search-bar:focus {
+  border: none;
+  outline: none;
+} */
+/* 
+.search-bar:hover {
+  border: none;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+} */
+
+.header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* theo mẫu, chiều rộng của thanh search thay đổi, 
+  trong khi 2 section left and right không thay đổi
+  -> fixed width with left and right
+  flex: 1 cho search bar */
+
+.left-section {
+  /* background-color: lightblue; */
+  /* width: 160px; */
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 25px;
+  margin: 0 23px 0 23px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  margin: 0 35px 0 60px; /*margin left and right để cách đều 2 bên section*/
+  max-width: 470px; /*khi kéo browser to hết cỡ, search bar cũng chỉ giới hạn độ lớn*/
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 38px;
+  padding-left: 12px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1.5px solid #ccc;
+  box-shadow: inset 1px 2px 2px rgba(128, 128, 128, 0.303);
+  /* ! inset: pust shadow inside the box instead of outside */
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  /* padding-left: 12px; */
+}
+
+.search-icon {
+  height: 30px
+}
+
+.voice-search-icon {
+  height: 25px
+}
+
+
+
+.right-section {
+  background-color: lightblue;
+  width: 200px;
+}

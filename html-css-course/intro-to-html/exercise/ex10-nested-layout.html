@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,18 +56,18 @@
       border: none;
       border-radius: 5px;
       padding: 7px 12px;
-     }
+    }
 
-     .cat-follow {
+    .cat-follow {
       vertical-align: top;
-     }
+    }
 
-    
-     .check-div {
+
+    .check-div {
       height: 200px;
       border: 1px solid red;
     }
-    
+
     .check-button {
       background-color: #0096D6;
       color: white;
@@ -76,32 +77,45 @@
       border-radius: 5px;
       padding: 7px 12px;
       vertical-align: middle;
-     }
-     .check-para {
-      vertical-align: middle;
-     }
+    }
 
+    .check-para {
+      vertical-align: middle;
+    }
+    
+    .cover-box {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.316);
+      border: none;
+      border-radius: 5px;
+      width: 450px;
+    }
+
+    /* .profile, 
+    .cat-follow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    } */
   </style>
 </head>
+
 <body>
   <!-- 10a -->
-  <div class="profile">
-    <img src="./img/cat2.png" alt="profile-pic" class="profile-pic">
-  </div>
-  <div class="cat-info">
-    <p class="cat-name">oliver</p>
-    <p class="the-type">the cat</p>
-    <p class="popular">Popular</p>
-  </div>
-  <div class="cat-follow">
-    <button class="follow-button">Follow</button>
-  </div>
-
-  <div class="check-div">
-    <!-- <button class="check-button">Check</button> -->
-    <p class="check-para">Hello</p>
+  <div class="cover-box">
+    <div class="profile">
+      <img src="./img/cat2.png" alt="profile-pic" class="profile-pic">
+    </div>
+    <div class="cat-info">
+      <p class="cat-name">oliver</p>
+      <p class="the-type">the cat</p>
+      <p class="popular">Popular</p>
+    </div>
+    <div class="cat-follow">
+      <button class="follow-button">Follow</button>
+    </div>
   </div>
 
 
 </body>
+
 </html>
