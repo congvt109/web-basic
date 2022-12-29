@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Roboto, Arial;
+}
+
+.container {
+  width: 450px;
+  border: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.all-inboxes {
+  /* background-color: aquamarine; */
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.843);
+  margin: 0;
+  height: 45px;
+  display: flex;
+  /* align-items: center; */
+  margin-top:15px;
+  margin-left: 10px;
+}
+
+.message-box-cover {
+  display: flex;
+  /* grid-template-columns: 1fr 4fr; */
+}
+
+.user-avatar-box {
+  /* display: ; */
+  /* background-color: lightblue; */
+  width: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.message-box {
+  flex: 1;
+}
+
+.sender-time {
+  /* background-color: rgb(255, 180, 127); */
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.sender,
+.time, 
+.message-title,
+.message-content {
+  margin: 0;
+}
+
+.sender {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.time {
+  font-weight: bold;
+  color: rgb(155, 153, 153);
+}
+
+.sender, 
+.message-title {
+  text-shadow: 2px 2px 2px rgba(141, 141, 141, 0.2);
+}
+
+.message-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.message-content {
+  color: rgb(122, 122, 122);
+  margin-top: 5px;
+}

@@ -17,7 +17,6 @@
 .header {
   height: 57px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -44,40 +43,98 @@
 
 .middle-section {
   flex: 1;
-  margin: 0 35px 0 60px; /*margin left and right để cách đều 2 bên section*/
+  margin: 0 0 0 60px; /*margin left and right để cách đều 2 bên section*/
   max-width: 470px; /*khi kéo browser to hết cỡ, search bar cũng chỉ giới hạn độ lớn*/
   display: flex;
   align-items: center;
+  min-width: 30px;
 }
 
 .search-bar {
   flex: 1;
-  height: 38px;
-  padding-left: 12px;
-  font-size: 16px;
-  border-radius: 3px;
-  border: 1.5px solid #ccc;
-  box-shadow: inset 1px 2px 2px rgba(128, 128, 128, 0.303);
-  /* ! inset: pust shadow inside the box instead of outside */
-}
-
-.search-bar::placeholder {
+  height: 36px;
+  padding: 0 0 0 12px;
   font-family: Roboto, Arial;
   font-size: 16px;
-  /* padding-left: 12px; */
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1.5px solid #ccc;
+  box-shadow: inset 1px 1px 1.5px rgba(128, 128, 128, 0.103);
+  /* ! inset: pust shadow inside the box instead of outside */
+
+  width: 0; 
+  /* ! khi browser co, searchbar sẽ co hết cỡ */
+}
+
+.search-button,
+.voice-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ccc;
+  height: 39px;
+}
+
+.search-button {
+  border: 1.5px solid #ccc;
+  background-color: #f2f2f2;
+  width: 65px;
+  margin-right: 10px; /*with voice icon*/
+  margin-left: -2px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .search-icon {
-  height: 30px
+  height: 24px;
 }
 
-.voice-search-icon {
-  height: 25px
+.voice-button {
+  background-color: #f8f8f8;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 23px;
 }
 
 
+.voice-icon {
+  height: 23px;
+}
 
 .right-section {
   background-color: lightblue;
-  width: 200px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 22px;
+  flex-shrink: 0;
+  /*! shrink: flexbox không co lại khi browser co, giữ nguyên width */
+}
+
+.upload-icon,
+.youtube-app-icon,
+.notifications-icon {
+  height: 24px;
+}
+
+
+.upload-icon {
+
+}
+
+.youtube-app-icon {
+
+}
+
+.notifications-icon {
+
+}
+
+.current-user-picture {
+  height: 32px;
+  border: none;
+  border-radius: 18px;
 }
