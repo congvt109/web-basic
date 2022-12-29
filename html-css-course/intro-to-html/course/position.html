@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position practice</title>
+</head>
+
+<body style="
+  height: 5000px;
+  padding-top: 80px;
+  padding-left: 90px;
+  margin: 0;
+">
+  <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    height: 50px;
+    
+  ">header</div>
+  <!--! Khi set top right bot left trbl thì dùng trong trường hợp 
+  muốn element fix nhưng resize theo windows
+  Còn khi muốn element giữ nguyên kích thước thì dùng height-width -->
+
+  <!-- ! Khi muốn tạo khoảng cách giữa header và content, thay
+  ! thay vì dùng margin-top cho content, (content có thể thay đổi) 
+  ! ==> nên dùng padding-top cho body -->
+
+
+  <div class="sidebar" style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    width: 72px;
+  ">side bar</div>
+
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+  ">div 1</div>
+
+  <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+  ">div 2</div>
+</body>
+
+</html>

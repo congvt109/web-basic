@@ -1,0 +1,84 @@
+body {
+  height: 1000px;
+}
+
+.big-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content-picture{
+  background-color: lightgray;
+  width: 650px; 
+  /* height: 300px; */
+  border-radius: 5px;
+}
+
+.bottom-box {
+  margin-top: -60px;
+}
+
+.watch-bar {
+  display: flex;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.watched-bar {
+  background-color: red;
+  height: 5px;
+  width: 100px;
+}
+
+.unwatch-bar {
+  background-color: gray;
+  height: 5px;
+  flex: 1;
+}
+
+.bottom-element {
+  width: 650px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+  height: 50px;
+  border-radius: 3px;
+  /* margin-top: 50px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 230px;
+  /* background-color: lightpink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.play-button,
+.play-and-pause-button,
+.volume {
+  height: 20px;
+}
+
+.watch-time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.right-section {
+  width: 200px;
+  /* background-color: lightpink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.transcript,
+.setting,
+.rectangle,
+.zoom {
+  height: 25px;
+}
