@@ -1,5 +1,6 @@
 body {
   height: 1000px;
+  background-color: rgba(10, 10, 10, 0.893);
 }
 
 .big-box {
@@ -9,9 +10,9 @@ body {
   margin-top: 100px;
 }
 
-.content-picture{
+.content-picture {
   background-color: lightgray;
-  width: 650px; 
+  width: 650px;
   /* height: 300px; */
   border-radius: 5px;
 }
@@ -81,4 +82,69 @@ body {
 .rectangle,
 .zoom {
   height: 25px;
+}
+
+p {
+  font-family: Arial;
+}
+
+.tag {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(73, 73, 73); */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.all,
+.live-stream,
+.related-video {
+  width: fit-content;
+  background-color: rgb(73, 73, 73);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.all {
+  /* background-color: lightblue; */
+}
+
+.live-stream {
+  /* background-color: lightpink; */
+}
+
+.related-video {
+  /* background-color: green; */
+}
+
+.another-video-box {
+
+}
+
+.another-video-picture-box {
+  background-color:rgb(73, 73, 73);
+}
+
+.another-video-picture {
+  width: 168px;
+}
+
+.video-length {
+  margin: 0;
+  background-color: black;
+  font-size: 12px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  border-radius: 4px;
+  margin-left: 110px;
+  margin-top: -20px;
+}
+
+.video-length,
+.another-video-title,
+.another-video-author,
+.another-video-description {
+  color: white;
 }

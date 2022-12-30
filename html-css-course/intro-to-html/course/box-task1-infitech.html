@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First task in Infitech</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+    .cover-box {
+      background-color: FFFFFF;
+      /* height: 314px; */
+      width: 344px;
+      border:2px solid #D9D9D9;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.255);
+    }
+
+    .main-title {
+      height: 72px;
+      font-size: 32px;
+      font-weight: 700px;
+      display: flex;
+      align-items: center;
+      scroll-padding-left: 18px;
+      border-bottom: 1px solid rgba(112, 111, 111, 0.93);;
+      padding-left: 18px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tag {
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      /* padding: 14px 20px 8px 8px; */
+      height: 35px;
+      align-items: center;
+      padding: 0 20px 0 8px;
+      border-bottom: 1px solid #D9D9D9;
+    }
+
+
+
+    .tag-value {
+      /* background-color: orange; */
+      width: fit-content;
+      display: flex;
+      align-items: baseline;
+      justify-content: left;
+
+    }
+
+    .tag-value-content {
+      margin-right: 5px;;
+    }
+
+    .tag-value-img {
+      width: 11px;
+      height: 14px;
+    }
+
+    .button-box {
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .watch-detail-button {
+      color: white;
+      background-color: #ED5E2E;
+      border: 1px solid #ED302E;
+      width: 280px;
+      height: 50px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cover-box">
+    <div class="main-title">非公開情報</div>
+    <div class="main-content">
+      <div class="tag">
+        <div class="tag-title">売上増減</div>
+        <div class="tag-value">
+          <p class="tag-value-content">情報あり</p>
+          <img class="tag-value-img" src="./img/lock-sale-next.png" alt="">
+        </div>
+      </div>
+      <div class="tag">
+        <div class="tag-title">従業員増減</div>
+        <div class="tag-value">
+          <p class="tag-value-content">情報なし</p>
+          <!-- <img class="tag-value-img" src="./img/lock-sale-next.png" alt="">  -->
+        </div>
+      </div>
+      <div class="tag">
+        <div class="tag-title">売上増減</div>
+        <div class="tag-value">
+          <p class="tag-value-content">情報あり</p>
+          <img class="tag-value-img" src="./img/lock-sale-next.png" alt="">
+        </div>
+      </div>
+      <div class="tag">
+        <div class="tag-title">売上増減</div>
+        <div class="tag-value">
+          <p class="tag-value-content">情報あり</p>
+          <img class="tag-value-img" src="./img/lock-sale-next.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="button-box">
+      <button class="watch-detail-button">詳しく見る</button>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
