@@ -6,9 +6,20 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+  /* ! absolutely piority */
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
+
+/* ! hiện tượng thumnails đè qua header,nhưng video-info lại chạy bên dưới header
+! Quy tắc viết sau xuất hiện trước
+! Tuy nhiên nó không áp dụng cho positon statis hay default
+* -> do đó thumnail chèn được lên header
+! tuy nhiên video-info là position default 
+* -> video-info bị đè bên dưới
+! khi đặt video-info thành != static thì nó sẽ chèn lên
+* -> tuy nhiên trong trg hợp này, sửa z-index của header */
 
 .search-bar {
   /* padding: 8px 12px; */
@@ -68,12 +79,12 @@
   box-shadow: inset 1px 1px 1.5px rgba(128, 128, 128, 0.103);
   /* ! inset: pust shadow inside the box instead of outside */
 
-  width: 0; 
+  width: 0;
   /* ! khi browser co, searchbar sẽ co hết cỡ */
 }
 
 .search-button,
-.voice-button {
+.voice-search-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,17 +106,60 @@
   height: 24px;
 }
 
-.voice-button {
+.voice-search-button {
   background-color: #f8f8f8;
   border: none;
-  height: 40px;
   width: 40px;
   border-radius: 23px;
 }
 
+.voice-search-icon {
+  height: 24px;
+}
 
-.voice-icon {
-  height: 23px;
+
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-app-container,
+.notifications-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-button .tool-tips,
+.voice-search-button .tool-tips,
+.upload-icon-container .tool-tips,
+.youtube-app-container .tool-tips,
+.notifications-icon-container .tool-tips{
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 5px;
+  border-radius: 3px;
+  bottom: -50px;
+  position: absolute;
+  opacity: 0; /*hide the button */
+  transition: opacity 0.2s;
+  pointer-events: none;
+  /* tránh tình trạng hover lên tooltip thì cx hiển thị 
+  vì tooltip nằm trong search-top */
+  white-space: nowrap;
+  /* ! fix lỗi bị gói lại bởi box */
+}
+
+.search-button:hover .tool-tips,
+.voice-search-button:hover .tool-tips,  
+.upload-icon-container:hover .tool-tips,
+.youtube-app-container:hover .tool-tips,
+.notifications-icon-container:hover .tool-tips{
+  opacity: 1;
 }
 
 .right-section {
@@ -114,7 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-right: 22px;
   flex-shrink: 0;
   /*! shrink: flexbox không co lại khi browser co, giữ nguyên width */
@@ -126,21 +180,34 @@
   height: 24px;
 }
 
-/* 
-.upload-icon {
-
+.notifications-icon-container {
+  position: relative;
 }
 
-.youtube-app-icon {
-
+.notifications-count {
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  position: absolute;
+  background-color: rgb(184, 0, 0);
+  color: white;
+  padding: 2px 6px;
+  border: none;
+  border-radius: 10px;
+  top: -2px;
+  right: -6px;
 }
-
-.notifications-icon {
-
-} */
 
 .current-user-picture {
   height: 32px;
   border: none;
   border-radius: 18px;
 }
+
+/* * inheritance sẽ có tác dụng từ cha -> con  
+* tuy nhiên , ảnh hưởng ấy chỉ có tác dụng lên Text như 
+* font-family, font-size, padding, margin, ..v..v*/
+
+/* Khi set property cho element
+Xét theo độ ưu tiên, property vào chi tiết hơn sẽ được áp dụng
+ex: .video-author >> body
+vì gọi trực tiếp vào tên class có độ ưu tiên cao hơn element */

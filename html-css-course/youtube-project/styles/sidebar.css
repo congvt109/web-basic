@@ -5,5 +5,121 @@
   left: 0;
   bottom: 0;
   width: 72px;
+  z-index: 200;
+  /* * z-index này để làm liền mạch sidebar-header,che đi bottom-border của header */
+  padding-top: 3px;
 }
 
+/* @media (min-width: 1000px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-box {
+    height: 50px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 999px) {
+
+  .sidebar-box {
+    height: 75px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+ */
+
+ @media (max-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+
+  .sidebar-box {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .sidebar-box:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .sidebar-box img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .sidebar-box div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 240px;
+    z-index: 200;
+    padding-top: 13px;
+  }
+
+  .sidebar-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 24px;
+  }
+
+  .sidebar-box:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .sidebar-box img {
+    height: 24px;
+    margin-right: 24px;
+  }
+
+  .sidebar-box div {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+  }
+}
+
+.sidebar-box:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.sidebar-box img {
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.sidebar-box div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
